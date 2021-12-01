@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Try to delete xcplan lockfiles and images every 60 seconds.
+# Every ten seconds, check for matching files over a minute old and delete them.
+#
+cd /var/www/html
+#
+# for i in {1..5}
+while true;
+do
+	sleep 10;
+	# Delete old files matching templates for lockfile and image; don't query or send messages.
+	find "/var/www/html" -mmin +1 -type f -name "xcplan_??????" -exec rm -f {} \;
+	find "/var/www/html" -mmin +1 -type f -name "xcplan_??????.png" -exec rm -f {} \;
+done
+echo "Unexpected termination of "Cleaner"
+

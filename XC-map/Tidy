@@ -1,0 +1,6 @@
+#! /bin/bash
+rbstyle ./map.cc ./temp1
+cp ./temp1 ./map.cc
+rm ./temp1
+read
+

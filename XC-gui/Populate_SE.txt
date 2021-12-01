@@ -1,0 +1,13 @@
+
+# Identify each file in the current directory and see if it is a '.tps' file.
+if($dh = opendir($dir)){
+    while (($file = readdir($dh)) !== false) {
+		$l = strlen($file);
+		$p = strpos($file, ".tps");
+		if($p == ($l - 4)) {
+			# The file is a turning point file. Add to Start/End box.
+			choice(substr($file, 0, -4), $startend);
+		}
+	}
+}
+

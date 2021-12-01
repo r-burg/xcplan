@@ -1,0 +1,6 @@
+#! /bin/bash
+sudo cp XC-plan /var/www/xcplan
+sudo chown www-data /var/www/xcplan/XC-plan
+
+sleep 3
+

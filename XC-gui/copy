@@ -1,0 +1,5 @@
+#! /bin/bash
+sudo cp *.php /var/www/html
+echo "Copied!"
+sleep 3
+

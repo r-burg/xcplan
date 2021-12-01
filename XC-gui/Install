@@ -1,0 +1,10 @@
+#! /bin/bash
+sudo cp gui?.php /var/www/xcplan
+sudo cp gui4.php /var/www/xcplan/xcplan.php
+sudo chown www-data /var/www/xcplan/gui4.php
+sudo chown www-data /var/www/xcplan/XC-map
+sudo chown www-data /var/www/xcplan/XC-plan
+sudo chown www-data /var/www/xcplan/del_image
+
+read
+

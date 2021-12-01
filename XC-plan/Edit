@@ -1,0 +1,3 @@
+#! /bin/bash
+gedit list_tasks.cc list_tasks.h
+

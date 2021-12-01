@@ -1,0 +1,6 @@
+#! /bin/bash
+echo Compile 'XC-plan':
+g++ -g -o XC-plan ./list_tasks.cc
+echo "**********************"
+read
+

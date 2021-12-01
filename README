@@ -1,0 +1,10 @@
+' xcplan' is intended to be a basic software suite for helping a pilot or task setter to propose tasks for glider pilots.
+It consists of four processes:
+	A gui, written in PHP to be accessed via a browser. The user can select a region (e.g. UK), a minimum distance, number of legs to the task, etc.
+	A planner written in C++ which creates a list of tasks meeting the requirements.
+	A mapping program which creates a .png image file showing the selected task with built-up areas, airspace, coastlines etc.
+	A program to delete the map files over a certain age (e.g. two minutes).
+	
+The last of these is not yet available. Using the software without it results in more and more map files cluttering up '/var/www/xcplan', though of course these can be deleted manually.
+
+

@@ -1,0 +1,10 @@
+#! /bin/bash
+rbstyle ./list_tasks.h ./temp1
+cp ./temp1 ./list_tasks.h
+rm ./temp1
+rbstyle ./list_tasks.cpp ./temp2
+cp ./temp2 ./list_tasks.cpp
+rm ./temp2
+echo "Done!"
+read
+

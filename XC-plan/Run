@@ -1,0 +1,8 @@
+#! /bin/bash
+#./XC-plan uk SUT 100.0 3 1 0
+# echo "---"
+#./XC-plan uk SUT 200.0 3 1 0
+#echo "---"
+./XC-plan uk SUT 300.0 3 1 0
+read
+
